@@ -23,5 +23,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./x86_64
+          publish_dir: ./
           external_repository: ardentteams/ardent-repo
+          publish_branch: master
+          cname: ${{ secrets.ACTIONS_STABLE_CNAME }}
+          
