@@ -22,5 +22,6 @@ jobs:
       - name: Deploy Githu Pages on Repository
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./x86_64
+          external_repository: ardentteams/ardent-repo
