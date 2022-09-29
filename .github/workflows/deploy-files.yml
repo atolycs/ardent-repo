@@ -27,4 +27,4 @@ jobs:
           external_repository: ardentteams/ardent-repo
           publish_branch: master
           cname: ${{ secrets.ACTIONS_STABLE_CNAME }}
-          
+          exclude_assets: 'CNAME'
